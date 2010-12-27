@@ -1,0 +1,5 @@
+= CRC32
+
+The file {{{crc32.js}}} provides {{{crc32()}}}, an efficient implementation of the CRC32 algorithm that will produce the same result as PHP's {{{crc32()}}} function.
+
+To be able to compare output from JS and PHP, the PHP version must be used on a string encoded with UTF-8 and the result must be printed using {{{printf('%u')}}} or {{{sprintf('%u')}}} since it is an unsigned integer. The file {{{crc32.php}}} includes example PHP code.
